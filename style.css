@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Arial", sans-serif;
+  }
+.container {
+    /* background-color: aquamarine; */
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: 8px solid silver;
+    border-radius: 30px;
+    width: 400px;
+    /* background-color: beige; */
+}
+.card::before{
+    content: 'X';
+    color: #ccc;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-weight: 1000;
+}
+.card::after{
+    content: '9';
+    background-color: rgb(255, 0, 0);
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top:-590px;
+    left: 360px;
+}
+.card img{
+    padding-block:32px;
+    width: 100%;
+}
+.card h4{
+    border-top:8px solid silver;
+    text-align: center;
+    font-size: 40px;
+    padding-block: 20px;
+}
